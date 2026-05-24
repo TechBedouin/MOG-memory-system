@@ -148,7 +148,7 @@ PRs welcome. Run `npm test` before submitting.
 
 ## License
 
-MIT © [Abderrahmane Khoudja](https://github.com/TechBedouin)
+MIT © [TechBedouin](https://github.com/TechBedouin)
 
 ---
 
