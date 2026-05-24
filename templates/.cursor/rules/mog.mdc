@@ -1,0 +1,28 @@
+---
+description: MOG memory boot sequence and RAM update mandate
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# MOG Memory (Markdown Object Graph)
+
+## Boot sequence (every session)
+1. Read `soul.md`
+2. Read `active_state.md`
+3. Follow semantic pointers only when TL;DR is insufficient
+4. Do not load entire `knowledge/` — graph traversal only
+
+## After every milestone
+You MUST edit `active_state.md`:
+- Update **Active Thread** and **Immediate Next Step**
+- Add or refresh pointers: `**[path.md]** : TL;DR -> summary`
+- Set **[Blocked_By]** if blocked
+
+Failure to update RAM = failed session handoff.
+
+## Writing entity nodes
+- Put `[Relates_To]:` / `[Blocked_By]:` headers directly under the H1 title
+- Never write chronological chat logs into markdown memory
+
+## Validation
+Run `mog lint` when the user asks or before claiming memory is complete.

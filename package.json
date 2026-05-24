@@ -1,0 +1,44 @@
+{
+  "name": "mog-memory",
+  "version": "1.0.0",
+  "description": "Markdown Object Graph — compile agent memory into git, not vectors",
+  "type": "module",
+  "bin": {
+    "mog": "./bin/mog.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "templates",
+    "spec"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "lint:example": "node bin/mog.js lint examples/three-session-bugfix"
+  },
+  "keywords": [
+    "ai-agents",
+    "agent-memory",
+    "cursor",
+    "claude",
+    "llm",
+    "markdown",
+    "knowledge-graph",
+    "context-engineering",
+    "coding-agent",
+    "no-vector-db"
+  ],
+  "author": "Abderrahmane Khoudja",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TechBedouin/mog-memory.git"
+  },
+  "homepage": "https://github.com/TechBedouin/mog-memory#readme",
+  "bugs": {
+    "url": "https://github.com/TechBedouin/mog-memory/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,5 @@
+node_modules/
+GRAPH.mmd
+memory/GRAPH_INDEX.md
+.DS_Store
+*.log

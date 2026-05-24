@@ -1,0 +1,25 @@
+name: MOG Lint
+
+on:
+  push:
+    paths:
+      - "**/*.md"
+      - "soul.md"
+      - "active_state.md"
+  pull_request:
+    paths:
+      - "**/*.md"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm install -g mog-memory@1.0.0 || npm link
+        working-directory: .
+        continue-on-error: true
+      - run: npx mog lint .
+        continue-on-error: false
